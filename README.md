@@ -1,4 +1,4 @@
-# SIte-Statique
+# Site-Statique
 Site statique pour projet
 html:csss
 html;tailwind
