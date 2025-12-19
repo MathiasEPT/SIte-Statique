@@ -191,6 +191,8 @@ text-transform: uppercase;
 
 .main{
     background: #152237;
+        color: white;
+
 }
 
 .hero .btn {
@@ -213,6 +215,12 @@ text-transform: uppercase;
 .contenu, .main {
     padding: 80px 8%;
 }
+
+.contenu{
+    color: #111827;
+}
+
+
 
 .populaires, .title-récent {
     font-size: 2.2rem;
@@ -275,12 +283,10 @@ color: white;
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 5px;
-    color: var(--dark);
 }
 
 .name-formateur {
     font-size: 0.85rem;
-    color: #9CA3AF;
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -294,7 +300,6 @@ color: white;
 
 .mini-para {
     font-size: 0.9rem;
-    color: var(--text);
     line-height: 1.5;
 }
 
