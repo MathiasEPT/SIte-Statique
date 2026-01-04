@@ -32,6 +32,9 @@ ul { list-style: none; }
 button { font-family: 'Poppins', sans-serif; cursor: pointer; border: none; outline: none; }
 input { font-family: 'Poppins', sans-serif; outline: none; }
 
+/* =========================================
+   1. HEADER
+   ========================================= */
 .header {
     display: flex;
     justify-content: space-between;
@@ -90,7 +93,7 @@ input { font-family: 'Poppins', sans-serif; outline: none; }
     transform: translateY(-50%);
     width: 18px;
     opacity: 0.8;
-    filter: invert(1);
+    filter: brightness(0) invert(1);
     cursor: pointer;
 }
 
@@ -127,6 +130,9 @@ input { font-family: 'Poppins', sans-serif; outline: none; }
     font-size: 0.95rem;
 }
 
+/* =========================================
+   2. HERO SECTION
+   ========================================= */
 .hero {
     position: relative;
     height: 600px;
@@ -164,35 +170,28 @@ input { font-family: 'Poppins', sans-serif; outline: none; }
 }
 
 .title {
-font-weight: 800;
-font-style: ExtraBold;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: -1.5%;
-text-align: center;
-vertical-align: middle;
-text-transform: uppercase;
-color: var(--header-bg);
-white-space: nowrap;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--header-bg);
+    white-space: nowrap;
 }
 
 .mini-title {
-
-font-family: Montserrat;
-font-size: 1.1rem;
-font-weight: 600;
-margin: 0 auto 40px auto;
-max-width: 1000px;
-opacity: 1;
-letter-spacing: 1px;
-color: black;
-text-transform: uppercase;
-}
-
-.main{
-    background: #152237;
-        color: white;
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 auto 40px auto;
+    max-width: 1000px;
+    opacity: 1;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
 }
 
 .hero .btn {
@@ -212,15 +211,21 @@ text-transform: uppercase;
     margin: 0 auto;
 }
 
+/* =========================================
+   3. FORMATIONS
+   ========================================= */
 .contenu, .main {
     padding: 80px 8%;
 }
 
-.contenu{
+.contenu {
     color: #111827;
 }
 
-
+.main {
+    background: #152237;
+    color: white;
+}
 
 .populaires, .title-récent {
     font-size: 2.2rem;
@@ -274,10 +279,9 @@ text-transform: uppercase;
     flex-grow: 1;
 }
 
-.title-récent{
-color: white;
+.title-récent {
+    color: white;
 }
-
 
 .name-formation {
     font-size: 1.15rem;
@@ -303,7 +307,7 @@ color: white;
     line-height: 1.5;
 }
 
-.button-contenu, .button-main {
+.button-contenu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,6 +324,175 @@ color: white;
     cursor: default;
 }
 
+.button-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 225px;
+    height: 40px;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--header-bg);
+    border: none;
+    font-weight: 700;
+    border-radius: 0;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+/* =========================================
+   4. SECTION AVIS CLIENTS
+   ========================================= */
+.avis-section {
+    padding: 100px 5%;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.avis-section .avis {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--header-bg);
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.avis-section > div {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card-avis {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: left;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-avis {
+    width: 139px;
+    height: 139px;
+    object-fit: cover;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+
+.name-avis {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--header-bg);
+    margin-bottom: 8px;
+}
+
+.card-avis .etoiles {
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.avis-paragraphe, .avis-text {
+    font-size: 17px;
+    color: var(--header-bg);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* =========================================
+   5. SECTION LES AVANTAGES KLIVIO
+   ========================================= */
+section.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 8%;
+    background: #F5F5F5;
+}
+
+.title-section {
+    width: 100%;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--header-bg);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* Colonne de gauche : la liste */
+section.container > div:nth-of-type(1) {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section.container > div:nth-of-type(1) > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+}
+
+/* Coloration uniforme de TOUTES les icônes de la liste (y compris annotation-typing.png) */
+section.container > div:nth-of-type(1) img {
+    width: 28px;
+    min-width: 28px;
+    height: auto;
+    display: block;
+    /* Filtre turquoise #15B7E2 appliqué à tous les symboles */
+    filter: invert(58%) sepia(87%) saturate(3045%) hue-rotate(158deg) brightness(97%) contrast(87%);
+}
+
+section.container > div:nth-of-type(1) p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--header-bg);
+}
+
+/* Colonne de droite : l'image */
+section.container > div:nth-of-type(2) {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avantages {
+    width: 727px;
+    height: 472px;
+    border-radius: 0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    opacity: 1;
+    object-fit: cover;
+    /* Remonte l'image pour coller au titre */
+    margin-top: -140px; 
+}
+
+/* =========================================
+   6. SECTION CRÉEZ VOS FORMATIONS (Statique)
+   ========================================= */
+.content {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.crée {
+    max-width: 100%;
+    border-radius: 0;
+}
+
+/* =========================================
+   7. FOOTER & MEDIA QUERIES
+   ========================================= */
 .footer {
     background-color: var(--bg-dark);
     color: #9CA3AF;
@@ -329,7 +502,6 @@ color: white;
     gap: 50px;
     border-top: 6px solid var(--primary);
 }
-
 
 .img-footer {
     height: 35px;
@@ -371,25 +543,18 @@ color: white;
 .button-footer .Connexion {
     background: white;
     border: 1px solid #4B5563;
-    color:#152237
+    color: #152237;
 }
 
 .button-footer .Inscription {
-background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
-color:#152237
-
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color: #152237;
 }
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
     .header > div:nth-child(3) { width: 250px; }
     .groupe { grid-template-columns: repeat(2, 1fr); }
+    .avis-section > div { gap: 40px; }
 }
 
 @media (max-width: 768px) {
@@ -403,6 +568,7 @@ color:#152237
     .title { font-size: 2.5rem; white-space: normal; } 
     
     .groupe { grid-template-columns: 1fr; }
+    .avis-section > div { flex-direction: column; align-items: center; }
     
     section.container { flex-direction: column-reverse; padding: 60px 20px; }
     .bottom-section { flex-direction: column; text-align: center; }
